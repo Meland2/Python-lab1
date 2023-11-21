@@ -1,10 +1,11 @@
 # TODO Напишите функцию для поиска индекса товара
-def product_search(items_list,find_item):
-    count=-1
-    for items in items_list:
-        count+=1
-        if items==find_item:
-            return count
+def product_search(list, item):
+    ind = 0
+    for subj in list:
+        if subj == item:
+            return ind
+        ind += 1
+    return None
 
 
 items_list = ['яблоко', 'банан', 'апельсин', 'груша', 'киви', 'банан']
